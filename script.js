@@ -1,12 +1,3 @@
-// const cursor = document.querySelector(".cursor");
-// const cursorFollower = document.querySelector(".cursor-follower");
-
-// document.addEventListener("mousemove", (e) => {
-//   cursor.style.left = e.clientX + "px";
-//   cursor.style.top = e.clientY + "px";
-//   cursorFollower.style.left = e.clientX - 10 + "px";
-//   cursorFollower.style.top = e.clientY - 10 + "px";
-// });
 
 const cursor = document.querySelector(".cursor");
 const cursorFollower = document.querySelector(".cursor-follower");
