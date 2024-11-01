@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -29,36 +30,40 @@ body {
   height: 40px;
   mix-blend-mode: screen;
 }
-
-#tech-stack {
-  margin-top: 30px;
-  font-size: 15px;
+#wco {
+  display: flex;
 }
-#ts-header {
-  margin: 20px 0 10px 0;
-  font-size: 18px;
-}
-.ts-links span {
-  margin: 0 20px;
-}
-#hide1,
-#hide2,
-#hide3 {
-  display: none;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-#certificates {
+#wci {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.cert-image {
-  width: 600px;
-  margin-top: 20px;
+#my-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 0;
+  margin: 0 20px 0 0;
+}
+#my-photo img {
+  width: 150px;
   border-radius: 10px;
+}
+.ts-links span {
+  margin: 0 10px;
+  font-size: 15px;
+}
+#ts-header {
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(0, 242, 255);
+}
+#resume {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(0, 242, 255);
 }
 header {
   position: fixed;
@@ -124,6 +129,26 @@ a {
   margin-top: 8px;
 }
 
+#certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.expandable img {
+  max-width: 600px;
+  border-radius: 10px;
+}
+.expandable {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+  margin-top: 40px;
+}
+.span {
+  font-size: 25px;
+}
+
 .projects-section {
   text-align: center;
   padding: 2rem 0;
@@ -147,8 +172,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 2rem;
+  margin: 0 auto 4rem auto;
 }
 .project {
   background: #5b5a5a;
@@ -214,7 +238,6 @@ footer {
 .p {
   font-size: 28px;
 }
-/* Making the code responsive with @media */
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -245,12 +268,32 @@ footer {
   .p {
     font-size: 18px;
   }
-  .cert-image {
+  .expandable img {
     max-width: 400px;
-    margin-top: 20px;
     border-radius: 10px;
+  }
+  .expandable {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    margin-top: 20px;
+  }
+  .span {
+    font-size: 20px;
   }
   .ts-links a {
     margin: 0 10px;
+  }
+  #wco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #resume {
+    display: none;
+  }
+  #my-photo {
+    margin-bottom: 30px;
   }
 }
