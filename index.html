@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RWD5: PERSONAL PORTFOLIO</title>
     <link rel="stylesheet" href="styles.css" />
-                  <!-- Link for font-awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
@@ -22,12 +21,17 @@
 
     <main>
       <section id="welcome-section">
+        <div id="wco">
+        <div id="my-photo"><img src="./project-images/my-photo.png" alt="my-photo"><a id="resume" href="https://drive.google.com/file/d/1grAGdiMOCPufU_HKEYoUUaChVn7T1wYd/view?usp=drive_link" target="_blank"
+          >My Resume</a
+        ></div>
+        <div id="wci">
         <div id="welcome"><h1>Welcome to My Portfolio</h1>
-        <p id="wel-p">A New Journey Started From Academia to Full-Stack Web Development</p></div>
+        <p id="wel-p">A New Journey Started From Academia to Web Development</p></div>
 
         <div id="tech-stack">
           <div id="ts-header">
-            <h2>My Tech Stack</h2>
+            <p>My Tech Stack</p>
           </div>
           <div class="ts-links">
 
@@ -40,38 +44,33 @@
         </div>
           </div>
         </div>
+        </div></div></div>
       </section>
 
       <section id="projects" class="projects-section">
         <h2>My Projects</h2>
+
         <div id="certificates">
-        <div id="myDIV1">
-          <a
-            href="https://www.freecodecamp.org/certification/Nagasreenivasarao_P/front-end-development-libraries"
-            target="_blank"
-            "><p class="p">5 - Front End Development Libraries (FEDL) Projects</p></a></div>
-          <div id="hide1"><img src="./project-images/fedl.png" alt="Certificate" class="cert-image">
+          <a href="https://www.freecodecamp.org/certification/Nagasreenivasarao_P/responsive-web-design" target="_blank"
+            ><span class="span" id="rwd">Responsive Web Design Project (5)</span></a
+          >
+          <div class="expandable" id="img1">
+            <img src="./project-images/rwd.png" alt="RWD" />
           </div>
-           <br />
-        
-        <div id="myDIV2">
-            <a
-              href="https://www.freecodecamp.org/certification/Nagasreenivasarao_P/javascript-algorithms-and-data-structures-v8"
-              target="_blank"
-              ><p class="p">5 - JavaScript and Data Structures (JSDS) Projects</p></a>
-        </div>
-        <div id="hide2"><img src="./project-images/jsds.png" alt="Certificate" class="cert-image">
-        </div>
-          <br />
-        
-          <div id="myDIV3">
-           <a
-             href="https://www.freecodecamp.org/certification/Nagasreenivasarao_P/responsive-web-design"
-             target="_blank"
-             "><p class="p">5 - Responsive Web Design (RWD) Projects</p></a>
-        </div>
-        <div id="hide3"><img src="./project-images/rwd.png" alt="Certificate" class="cert-image">
-         </div>
+    
+          <a href="https://www.freecodecamp.org/certification/Nagasreenivasarao_P/javascript-algorithms-and-data-structures-v8" target="_blank"
+            ><span class="span" id="jsds">JavaScript and Data Structures Project (5)</span></a
+          >
+          <div class="expandable" id="img2">
+            <img src="./project-images/jsds.png" alt="JSDS" />
+          </div>
+    
+          <a href="https://www.freecodecamp.org/certification/Nagasreenivasarao_P/front-end-development-libraries" target="_blank"
+            ><span class="span" id="fedl">Front End Development Libraries Project (5)</span></a
+          >
+          <div class="expandable" id="img3">
+            <img src="./project-images/fedl.png" alt="FEDL" />
+          </div>
         </div>
       </div>
          <br><br><br><br>
@@ -254,7 +253,7 @@
           </a>
 
           <a
-            href="https://sreenu926.github.io/RWD5_PERSONAL_PORTFOLIO/"
+            href="https://sreenu926.github.io/RWD5_Personal_Portfolio/"
             target="_blank"
             class="project project-tile"
           >
