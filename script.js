@@ -1,4 +1,3 @@
-
 const cursor = document.querySelector(".cursor");
 const cursorFollower = document.querySelector(".cursor-follower");
 
@@ -27,39 +26,35 @@ document.addEventListener("mousemove", updateCursor);
 // Call the update function initially to avoid a jump on first mousemove
 requestAnimationFrame(updateCursor);
 
-const myDiv1 = document.getElementById("myDIV1");
-const hide1 = document.getElementById("hide1");
-const myDiv2 = document.getElementById("myDIV2");
-const hide2 = document.getElementById("hide2");
-const myDiv3 = document.getElementById("myDIV3");
-const hide3 = document.getElementById("hide3");
+const rwd = document.getElementById("rwd");
+const img1 = document.getElementById("img1");
 
-myDiv1.addEventListener("mouseover", () => {
-  hide1.style.display = "block";
-  hide1.style.opacity = 1;
+rwd.addEventListener("mouseover", function () {
+  img1.style.height = "480px";
 });
 
-myDiv1.addEventListener("mouseout", () => {
-  hide1.style.display = "none";
-  hide1.style.opacity = 0;
+rwd.addEventListener("mouseout", function () {
+  img1.style.height = "0";
 });
 
-myDiv2.addEventListener("mouseover", () => {
-  hide2.style.display = "block";
-  hide2.style.opacity = 1;
+const jsds = document.getElementById("jsds");
+const img2 = document.getElementById("img2");
+
+jsds.addEventListener("mouseover", function () {
+  img2.style.height = "480px";
 });
 
-myDiv2.addEventListener("mouseout", () => {
-  hide2.style.display = "none";
-  hide2.style.opacity = 0;
+jsds.addEventListener("mouseout", function () {
+  img2.style.height = "0";
 });
 
-myDiv3.addEventListener("mouseover", () => {
-  hide3.style.display = "block";
-  hide3.style.opacity = 1;
+const fedl = document.getElementById("fedl");
+const img3 = document.getElementById("img3");
+
+fedl.addEventListener("mouseover", function () {
+  img3.style.height = "480px";
 });
 
-myDiv3.addEventListener("mouseout", () => {
-  hide3.style.display = "none";
-  hide3.style.opacity = 0;
+fedl.addEventListener("mouseout", function () {
+  img3.style.height = "0";
 });
