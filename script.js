@@ -28,9 +28,14 @@ requestAnimationFrame(updateCursor);
 
 const rwd = document.getElementById("rwd");
 const img1 = document.getElementById("img1");
+const screenWidth = window.innerWidth;
 
 rwd.addEventListener("mouseover", function () {
-  img1.style.height = "480px";
+  if (screenWidth <= 768) {
+    img1.style.height = "310px";
+  } else {
+    img1.style.height = "480px";
+  }
 });
 
 rwd.addEventListener("mouseout", function () {
@@ -41,7 +46,11 @@ const jsds = document.getElementById("jsds");
 const img2 = document.getElementById("img2");
 
 jsds.addEventListener("mouseover", function () {
-  img2.style.height = "480px";
+  if (screenWidth <= 768) {
+    img2.style.height = "310px";
+  } else {
+    img2.style.height = "480px";
+  }
 });
 
 jsds.addEventListener("mouseout", function () {
@@ -52,7 +61,11 @@ const fedl = document.getElementById("fedl");
 const img3 = document.getElementById("img3");
 
 fedl.addEventListener("mouseover", function () {
-  img3.style.height = "480px";
+  if (screenWidth <= 768) {
+    img3.style.height = "300px";
+  } else {
+    img3.style.height = "480px";
+  }
 });
 
 fedl.addEventListener("mouseout", function () {
