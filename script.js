@@ -26,48 +26,36 @@ document.addEventListener("mousemove", updateCursor);
 // Call the update function initially to avoid a jump on first mousemove
 requestAnimationFrame(updateCursor);
 
-const rwd = document.getElementById("rwd");
-const img1 = document.getElementById("img1");
-const screenWidth = window.innerWidth;
+const elements = [
+  { elementId: "csm", imgId: "img1", height: { small: 310, large: 480 } },
+  { elementId: "gpm", imgId: "img2", height: { small: 330, large: 500 } },
+  { elementId: "rwd", imgId: "img3", height: { small: 300, large: 480 } },
+  { elementId: "jsds", imgId: "img4", height: { small: 300, large: 480 } },
+  { elementId: "fedl", imgId: "img5", height: { small: 300, large: 480 } },
+];
 
-rwd.addEventListener("mouseover", function () {
-  if (screenWidth <= 768) {
-    img1.style.height = "310px";
-  } else {
-    img1.style.height = "480px";
-  }
-});
+function handleHover(element) {
+  const img = document.getElementById(element.imgId);
+  const certHeight = img.offsetHeight; // Get the actual height of the certificate
 
-rwd.addEventListener("mouseout", function () {
-  img1.style.height = "0";
-});
+  // Animate height change
+  img.style.transition = "height 0.7s ease-in-out";
+  img.style.height =
+    window.innerWidth <= 768
+      ? `${element.height.small}px`
+      : `${element.height.large}px`;
+}
 
-const jsds = document.getElementById("jsds");
-const img2 = document.getElementById("img2");
+function handleMouseOut(element) {
+  const img = document.getElementById(element.imgId);
 
-jsds.addEventListener("mouseover", function () {
-  if (screenWidth <= 768) {
-    img2.style.height = "310px";
-  } else {
-    img2.style.height = "480px";
-  }
-});
+  // Animate height back to 0
+  img.style.transition = "height 0.7s ease-in-out";
+  img.style.height = "0";
+}
 
-jsds.addEventListener("mouseout", function () {
-  img2.style.height = "0";
-});
-
-const fedl = document.getElementById("fedl");
-const img3 = document.getElementById("img3");
-
-fedl.addEventListener("mouseover", function () {
-  if (screenWidth <= 768) {
-    img3.style.height = "300px";
-  } else {
-    img3.style.height = "480px";
-  }
-});
-
-fedl.addEventListener("mouseout", function () {
-  img3.style.height = "0";
+elements.forEach((element) => {
+  const el = document.getElementById(element.elementId);
+  el.addEventListener("mouseover", () => handleHover(element));
+  el.addEventListener("mouseout", () => handleMouseOut(element));
 });
