@@ -27,17 +27,16 @@ document.addEventListener("mousemove", updateCursor);
 requestAnimationFrame(updateCursor);
 
 const elements = [
-  { elementId: "csm", imgId: "img1", height: { small: 310, large: 480 } },
-  { elementId: "gpm", imgId: "img2", height: { small: 330, large: 500 } },
-  { elementId: "rwd", imgId: "img3", height: { small: 300, large: 480 } },
-  { elementId: "jsds", imgId: "img4", height: { small: 300, large: 480 } },
-  { elementId: "fedl", imgId: "img5", height: { small: 300, large: 480 } },
+  { elementId: "csm", imgId: "img1", height: { small: 220, large: 380 } },
+  { elementId: "gpm", imgId: "img2", height: { small: 240, large: 400 } },
+  { elementId: "rwd", imgId: "img3", height: { small: 220, large: 380 } },
+  { elementId: "jsds", imgId: "img4", height: { small: 220, large: 380 } },
+  { elementId: "fedl", imgId: "img5", height: { small: 220, large: 380 } },
 ];
 
 function handleHover(element) {
   const img = document.getElementById(element.imgId);
   const certHeight = img.offsetHeight; // Get the actual height of the certificate
-
   // Animate height change
   img.style.transition = "height 0.7s ease-in-out";
   img.style.height =
@@ -48,7 +47,6 @@ function handleHover(element) {
 
 function handleMouseOut(element) {
   const img = document.getElementById(element.imgId);
-
   // Animate height back to 0
   img.style.transition = "height 0.7s ease-in-out";
   img.style.height = "0";

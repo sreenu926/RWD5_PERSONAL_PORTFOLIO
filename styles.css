@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -116,7 +117,7 @@ a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 100%;
   min-height: 100vh;
@@ -157,14 +158,15 @@ a {
   gap: 20px;
 }
 .expandable img {
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 20px;
 }
 .expandable {
   height: 0;
   overflow: hidden;
   transition: all 0.7s ease-in-out;
-  margin-top: 40px;
+  margin-top: 20px;
+  position: relative;
 }
 .span {
   font-size: 25px;
@@ -180,7 +182,7 @@ a {
 #certifications h2 {
   text-align: center;
   padding: 10px;
-  margin: 70px 0 60px 0;
+  margin: 110px 0 60px 0;
   font-size: xx-large;
   color: rgb(13, 221, 244);
   box-shadow: 0 0 10px 10px rgb(255, 123, 0);
@@ -302,7 +304,7 @@ footer {
     font-size: 18px;
   }
   .expandable img {
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 10px;
   }
   .expandable {
