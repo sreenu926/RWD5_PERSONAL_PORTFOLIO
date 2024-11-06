@@ -64,6 +64,8 @@ function handleMouseOut(element) {
   img.style.height = "0";
 }
 
+// 7. This part iterates over each element in the elements array and attaches event listeners to them:
+
 elements.forEach((element) => {
   const el = document.getElementById(element.elementId);
   el.addEventListener("mouseover", () => handleHover(element));
