@@ -8,6 +8,8 @@ const cursorFollower = document.querySelector(".cursor-follower"); // Select the
 let lastX = 0;
 let lastY = 0;
 
+// 3. updateCursor Function:
+
 function updateCursor(e) {
   const newX = e.clientX;
   const newY = e.clientY;
