@@ -34,6 +34,8 @@ document.addEventListener("mousemove", updateCursor);
 // Call the update function initially to avoid a jump on first mousemove
 requestAnimationFrame(updateCursor);
 
+// 5. Animating Certificate Heights:
+
 const elements = [
   { elementId: "csm", imgId: "img1", height: { small: 220, large: 380 } },
   { elementId: "gpm", imgId: "img2", height: { small: 240, large: 400 } },
