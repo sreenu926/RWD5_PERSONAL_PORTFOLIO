@@ -27,6 +27,8 @@ function updateCursor(e) {
   cursorFollower.style.top = lastY - 10 + "px";
 }
 
+// 4. Event Listeners and Initial Update:
+
 document.addEventListener("mousemove", updateCursor);
 
 // Call the update function initially to avoid a jump on first mousemove
