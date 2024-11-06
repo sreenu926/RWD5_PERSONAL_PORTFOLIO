@@ -1,7 +1,9 @@
 // 1. Selecting Elements:
 
-const cursor = document.querySelector(".cursor"); // Selects the element with the class .cursor and stores it in the cursor variable. 
-const cursorFollower = document.querySelector(".cursor-follower"); // Selects the element with the class .cursor-follower and stores it in the cursorFollower variable. 
+const cursor = document.querySelector(".cursor"); // Select the element with the class .cursor and store it in the cursor variable. 
+const cursorFollower = document.querySelector(".cursor-follower"); // Select the element with the class .cursor-follower and store it in the cursorFollower variable. 
+
+// 2. Tracking Mouse Movements
 
 let lastX = 0;
 let lastY = 0;
