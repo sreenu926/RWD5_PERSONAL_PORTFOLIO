@@ -44,6 +44,8 @@ const elements = [
   { elementId: "fedl", imgId: "img5", height: { small: 220, large: 380 } },
 ];
 
+// 6. hover and mouseout Functions:
+
 function handleHover(element) {
   const img = document.getElementById(element.imgId);
   const certHeight = img.offsetHeight; // Get the actual height of the certificate
